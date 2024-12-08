@@ -12,7 +12,7 @@ cookieID.addEventListener('click', function(){
   if (counter % 2 == 0) {
     cookieID.width = '250';
   }
-  if (counter % 2 !== 0) cookieID.width = '202';
+  if (counter % 2 !== 0) cookieID.width = '200';
 });
 cookieID.onclick = function () {
     
