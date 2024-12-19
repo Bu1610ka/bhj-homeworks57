@@ -1,9 +1,11 @@
-
-
 let cookieID = document.getElementById ('cookie');
 let clicker__counterID = document.getElementById('clicker__counter');
 let cookieSpeedClick = document.getElementById("clicker__speed__counter");
+let counter = document.getElementById("clicker__cookie");
+let closeTime = document.getElementById("clicker__status"); 
 let todayTime = Date.now();
+
+
 let counterID = 0; 
 cookieID.addEventListener('click', function(){
   counter++; 
@@ -21,7 +23,7 @@ cookieID.onclick = function () {
     let currentClicks = parseInt(clicker__counterID.textContent);
     clicker__counterID.textContent = currentClicks + 1;
 
-    cookieSpeedClick.textContent = (((Date.now() - todayTime) / 1000) / (currentClicks - counterID)).toFixed(2);
+    cookieSpeedClick.textContent = (((Date.now() - todayTime)/1000) ) / (currentClicks - counterID).toFixed(2);
     counterID = currentClicks;
 
 };
